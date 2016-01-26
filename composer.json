@@ -1,0 +1,22 @@
+{
+    "name": "codefog/contao-bootstrap",
+    "description": "Bootstrap extension for Contao Open Source CMS",
+    "keywords": ["contao", "bootstrap"],
+    "type": "contao-bundle",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Codefog",
+            "homepage": "http://codefog.pl"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "contao/core": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codefog\\ContaoBootstrapBundle\\": "src/"
+        }
+    }
+}
