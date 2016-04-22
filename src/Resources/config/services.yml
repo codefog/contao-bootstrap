@@ -1,0 +1,29 @@
+services:
+    codefog_bootstrap.data_container.layout:
+        class: Codefog\ContaoBootstrapBundle\DataContainer\LayoutContainer
+        arguments:
+            - "@contao.framework"
+
+    codefog_bootstrap.listener.template:
+        class: Codefog\ContaoBootstrapBundle\EventListener\TemplateListener
+        arguments:
+            - "@codefog_bootstrap.page_checker"
+            - "@request_stack"
+            - "@codefog_bootstrap.template_mapper"
+
+    codefog_bootstrap.listener.widget:
+        class: Codefog\ContaoBootstrapBundle\EventListener\WidgetListener
+        arguments:
+            - "@codefog_bootstrap.page_checker"
+            - "@request_stack"
+            - "@codefog_bootstrap.template_mapper"
+
+    codefog_bootstrap.page_checker:
+        class: Codefog\ContaoBootstrapBundle\PageChecker
+        arguments:
+            - "@contao.framework"
+
+    codefog_bootstrap.template_mapper:
+        class: Codefog\ContaoBootstrapBundle\TemplateMapper
+        arguments:
+            - "%codefog_bootstrap.template_mapper%"
