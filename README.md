@@ -31,15 +31,7 @@ Main column: col-md-8
 Custom frontend templates
 -------------------------
 
-If the Bootstrap is enabled for the current page layout, the extension performs an intelligent template replacement on the fly. The template mapper is defined as the replaceable ```%codefog_bootstrap.template_mapper%``` container parameter:
-
-```yaml
-parameters:
-    codefog_bootstrap.template_mapper:
-        form_checkbox: cfgbs_form_checkbox
-        form_radio: cfgbs_form_radio
-        ...
-```
+If the Bootstrap is enabled for the current page layout, the extension performs an intelligent template replacement on the fly. The template mapper is defined as the replaceable ```%codefog_bootstrap.template_mapper%``` container parameter.
 
 **Note:** to allow template overriding, the elements with defined custom templates will not be overridden.
 
@@ -66,3 +58,25 @@ Modules:
 Pagination:
 
 - pagination
+
+Overriding frontend templates mapper
+------------------------------------
+You can override the frontend templates mapper in your ```config.yml``` file like follows:
+
+```yaml
+codefog_contao_bootstrap:
+    template_mapper:
+        form_checkbox: cfgbs_form_checkbox
+        form_radio: cfgbs_form_radio
+        ...
+```
+
+You can also override the frontend templates mapper in your ```parameters.yml``` file like follows:
+
+```yaml
+parameters:
+    codefog_bootstrap.template_mapper:
+        form_checkbox: cfgbs_form_checkbox
+        form_radio: cfgbs_form_radio
+        ...
+```
