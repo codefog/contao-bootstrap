@@ -5,20 +5,20 @@
  */
 TemplateLoader::addFiles([
     // Forms
-    'cfgbs_form_checkbox'  => 'src/Codefog/ContaoBootstrapBundle/Resources/contao/templates/forms',
-    'cfgbs_form_radio'     => 'src/Codefog/ContaoBootstrapBundle/Resources/contao/templates/forms',
-    'cfgbs_form_select'    => 'src/Codefog/ContaoBootstrapBundle/Resources/contao/templates/forms',
-    'cfgbs_form_submit'    => 'src/Codefog/ContaoBootstrapBundle/Resources/contao/templates/forms',
-    'cfgbs_form_textarea'  => 'src/Codefog/ContaoBootstrapBundle/Resources/contao/templates/forms',
-    'cfgbs_form_textfield' => 'src/Codefog/ContaoBootstrapBundle/Resources/contao/templates/forms',
+    'cfgbs_form_checkbox'  => 'vendor/codefog/contao-bootstrap/src/Resources/contao/templates/forms',
+    'cfgbs_form_radio'     => 'vendor/codefog/contao-bootstrap/src/Resources/contao/templates/forms',
+    'cfgbs_form_select'    => 'vendor/codefog/contao-bootstrap/src/Resources/contao/templates/forms',
+    'cfgbs_form_submit'    => 'vendor/codefog/contao-bootstrap/src/Resources/contao/templates/forms',
+    'cfgbs_form_textarea'  => 'vendor/codefog/contao-bootstrap/src/Resources/contao/templates/forms',
+    'cfgbs_form_textfield' => 'vendor/codefog/contao-bootstrap/src/Resources/contao/templates/forms',
 
     // Frontend pages
-    'cfgbs_fe_page'        => 'src/Codefog/ContaoBootstrapBundle/Resources/contao/templates/frontend',
+    'cfgbs_fe_page'        => 'vendor/codefog/contao-bootstrap/src/Resources/contao/templates/frontend',
 
     // Modules
-    'cfgbs_mod_breadcrumb' => 'src/Codefog/ContaoBootstrapBundle/Resources/contao/templates/modules',
-    'cfgbs_mod_search'     => 'src/Codefog/ContaoBootstrapBundle/Resources/contao/templates/modules',
+    'cfgbs_mod_breadcrumb' => 'vendor/codefog/contao-bootstrap/src/Resources/contao/templates/modules',
+    'cfgbs_mod_search'     => 'vendor/codefog/contao-bootstrap/src/Resources/contao/templates/modules',
 
     // Pagination
-    'cfgbs_pagination'     => 'src/Codefog/ContaoBootstrapBundle/Resources/contao/templates/pagination',
+    'cfgbs_pagination'     => 'vendor/codefog/contao-bootstrap/src/Resources/contao/templates/pagination',
 ]);
