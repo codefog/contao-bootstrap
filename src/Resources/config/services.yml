@@ -1,0 +1,17 @@
+services:
+    codefog_bootstrap.data_container.layout:
+        class: Codefog\ContaoBootstrapBundle\DataContainer\LayoutContainer
+        arguments:
+            - "@contao.framework"
+
+    codefog_bootstrap.listener.template_replacement:
+        class: Codefog\ContaoBootstrapBundle\EventListener\TemplateReplacementListener
+        arguments:
+            - "@contao.framework"
+            - "@request_stack"
+            - "@codefog_bootstrap.template_mapper"
+
+    codefog_bootstrap.template_mapper:
+        class: Codefog\ContaoBootstrapBundle\TemplateMapper
+        arguments:
+            - "%codefog_bootstrap.template_mapper%"
