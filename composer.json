@@ -11,12 +11,21 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.5.0",
         "contao/core-bundle": "^4.1"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
     },
     "autoload": {
         "psr-4": {
             "Codefog\\ContaoBootstrapBundle\\": "src/"
         }
+    },
+    "extra": {
+        "contao-manager-plugin": "Codefog\\ContaoBootstrapBundle\\ContaoManager\\Plugin"
+    },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
     }
 }
