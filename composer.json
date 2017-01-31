@@ -20,7 +20,7 @@
     "autoload": {
         "psr-4": {
             "Codefog\\ContaoBootstrapBundle\\": "src/"
-        },
+        }
     },
     "extra": {
         "contao-manager-plugin": "Codefog\\ContaoBootstrapBundle\\Plugin"
