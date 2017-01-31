@@ -23,6 +23,6 @@
         }
     },
     "extra": {
-        "contao-manager-plugin": "Codefog\\ContaoBootstrapBundle\\Plugin"
+        "contao-manager-plugin": "Codefog\\ContaoBootstrapBundle\\ContaoManager\\Plugin"
     }
 }
