@@ -15,7 +15,7 @@
         "contao/core-bundle": "^4.1"
     },
     "require-dev": {
-        "contao/manager-plugin": "~1.0"
+        "contao/manager-plugin": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -24,5 +24,8 @@
     },
     "extra": {
         "contao-manager-plugin": "Codefog\\ContaoBootstrapBundle\\ContaoManager\\Plugin"
+    },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
     }
 }
