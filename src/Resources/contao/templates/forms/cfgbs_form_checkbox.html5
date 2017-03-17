@@ -26,11 +26,9 @@
         <?php endif; ?>
 
         <?php if ($option['type'] == 'option'): ?>
-            <div class="<?php if ($this->formInline): ?>checkbox-inline<?php else: ?>checkbox<?php endif; ?>">
-                <label id="lbl_<?= $option['id'] ?>" for="opt_<?= $option['id'] ?>">
-                    <input type="checkbox" name="<?= $option['name'] ?>" id="opt_<?= $option['id'] ?>" value="<?= $option['value'] ?>"<?= $option['checked'] ?><?= $option['attributes'] ?>> <?= $option['label'] ?>
-                </label>
-            </div>
+            <label id="lbl_<?= $option['id'] ?>" for="opt_<?= $option['id'] ?>" class="<?php if ($this->formInline): ?>checkbox-inline<?php else: ?>checkbox<?php endif; ?>">
+                <input type="checkbox" name="<?= $option['name'] ?>" id="opt_<?= $option['id'] ?>" value="<?= $option['value'] ?>"<?= $option['checked'] ?><?= $option['attributes'] ?>> <?= $option['label'] ?>
+            </label>
         <?php endif; ?>
 
         <?php if ($option['type'] == 'group_end'): ?>
