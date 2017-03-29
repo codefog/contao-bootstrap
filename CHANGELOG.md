@@ -1,7 +1,7 @@
 contao-bootstrap Changelog
 ==========================
 
-Version 1.0.2 stable (????-??-??)
+Version 1.0.2 stable (2017-03-29)
 ---------------------------------
 
 ### Fixed
