@@ -25,7 +25,7 @@ $GLOBALS['TL_DCA']['tl_layout']['fields']['cfg_bootstrap_enable'] = [
     'exclude'   => true,
     'filter'    => true,
     'inputType' => 'checkbox',
-    'eval'      => ['submitOnChange' => true, 'tl_class' => 'w50'],
+    'eval'      => ['submitOnChange' => true, 'tl_class' => 'w50 m12'],
     'sql'       => "char(1) NOT NULL default ''",
 ];
 
