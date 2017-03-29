@@ -5,6 +5,7 @@ Version 1.0.2 stable (????-??-??)
 ---------------------------------
 
 ### Fixed
+- Load the bundle after ContaoCoreBundle
 - Fixed the incorrect markup for radio and checkboxes
 
 
