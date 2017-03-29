@@ -1,6 +1,14 @@
 contao-bootstrap Changelog
 ==========================
 
+Version 1.0.2 stable (2017-03-29)
+---------------------------------
+
+### Fixed
+- Load the bundle after ContaoCoreBundle
+- Fixed the incorrect markup for radio and checkboxes
+
+
 Version 1.0.1 stable (2017-01-31)
 ---------------------------------
 
