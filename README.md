@@ -1,12 +1,6 @@
-contao-bootstrap extension
-==========================
+# Bootstrap – Documentation
 
-The extension for Contao Open Source CMS that provides frontend integration with [Bootstrap 3](https://getbootstrap.com/).
-
-The extension adds new settings for the page layout allowing to build the layout with Bootstrap CSS classes like ```col-md-*```. It also implements the intelligent template replacement on the fly (read more about it in the "Custom frontend templates" section).
-
-Installation
-------------
+## Installation
 
 Run the composer command to install the package:
 
@@ -16,8 +10,8 @@ composer require codefog/contao-bootstrap
 
 You also have to make sure that the Bootstrap 3 is included in your page layout. There are many different ways to implement the script and the decision about it is totally up to you.
 
-Page layout settings
---------------------
+
+## Page layout settings
 
 To enable the Bootstrap integration simply tick the checkbox in the page layout settings. After a quick page reload you will notice that the default page layout builder fields (the ones where you set widths of columns) have been replaced by the new ones where you define the CSS class for each of the column.
 
@@ -28,8 +22,8 @@ Left column: col-md-4
 Main column: col-md-8
 ```
 
-Custom frontend templates
--------------------------
+
+## Custom frontend templates
 
 If the Bootstrap is enabled for the current page layout, the extension performs an intelligent template replacement on the fly. The template mapper is defined as the replaceable ```%codefog_bootstrap.template_mapper%``` container parameter.
 
@@ -59,8 +53,9 @@ Pagination:
 
 - pagination
 
-Overriding frontend templates mapper
-------------------------------------
+
+## Overriding frontend templates mapper
+
 You can override the frontend templates mapper in your ```config.yml``` file like follows:
 
 ```yaml
