@@ -53,7 +53,8 @@ class TemplateReplacementListener
     {
         // Do not override if the current scope is not frontend or the template has a custom template set
         // or the Bootstrap is not enabled
-        if ($this->requestStack->getCurrentRequest()->get('_scope') !== ContaoCoreBundle::SCOPE_FRONTEND
+        if (($request = $this->requestStack->getCurrentRequest()) === null
+            || $request->get('_scope') !== ContaoCoreBundle::SCOPE_FRONTEND
             || $template->customTpl
             || !$this->isBootstrapEnabled()
         ) {
