@@ -1,11 +1,13 @@
 services:
     codefog_bootstrap.data_container.layout:
         class: Codefog\ContaoBootstrapBundle\DataContainer\LayoutContainer
+        public: true
         arguments:
             - "@contao.framework"
 
     codefog_bootstrap.listener.template_replacement:
         class: Codefog\ContaoBootstrapBundle\EventListener\TemplateReplacementListener
+        public: true
         arguments:
             - "@contao.framework"
             - "@request_stack"
@@ -13,5 +15,6 @@ services:
 
     codefog_bootstrap.template_mapper:
         class: Codefog\ContaoBootstrapBundle\TemplateMapper
+        public: true
         arguments:
             - "%codefog_bootstrap.template_mapper%"
